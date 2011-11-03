@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/dashrule
+# catalog-date 2009-08-09 22:45:01 +0200
+# catalog-license lppl
+# catalog-version 1.2
 Name:		texlive-dashrule
 Version:	1.2
 Release:	1
@@ -51,6 +57,7 @@ compatible with every LaTeX back-end processor.
 #- source
 %doc %{_texmfdistdir}/source/latex/dashrule/dashrule.dtx
 %doc %{_texmfdistdir}/source/latex/dashrule/dashrule.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ compatible with every LaTeX back-end processor.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
