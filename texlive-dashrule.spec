@@ -1,12 +1,12 @@
-# revision 15878
+# revision 29579
 # category Package
 # catalog-ctan /macros/latex/contrib/dashrule
-# catalog-date 2009-08-09 22:45:01 +0200
+# catalog-date 2013-03-31 13:01:15 +0200
 # catalog-license lppl
-# catalog-version 1.2
+# catalog-version 1.3
 Name:		texlive-dashrule
-Version:	1.2
-Release:	2
+Version:	1.3
+Release:	1
 Summary:	Draw dashed rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dashrule
@@ -57,17 +57,3 @@ compatible with every LaTeX back-end processor.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
-+ Revision: 750765
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 718201
-- texlive-dashrule
-- texlive-dashrule
-- texlive-dashrule
-- texlive-dashrule
-
