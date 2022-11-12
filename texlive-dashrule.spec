@@ -1,19 +1,13 @@
-# revision 29579
-# category Package
-# catalog-ctan /macros/latex/contrib/dashrule
-# catalog-date 2013-03-31 13:01:15 +0200
-# catalog-license lppl
-# catalog-version 1.3
 Name:		texlive-dashrule
-Version:	1.3
-Release:	10
+Version:	29579
+Release:	1
 Summary:	Draw dashed rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dashrule
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ opposed to, e.g., PostScript \specials) they are fully
 compatible with every LaTeX back-end processor.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -50,7 +44,8 @@ compatible with every LaTeX back-end processor.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
