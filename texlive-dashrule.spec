@@ -3,7 +3,7 @@ Version:	29579
 Release:	2
 Summary:	Draw dashed rules
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dashrule
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/dashrule
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dashrule.doc.r%{version}.tar.xz
